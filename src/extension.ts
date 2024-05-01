@@ -6,11 +6,11 @@ import { getConfig, writeCode } from './tool'
 
 export function activate(context: vscode.ExtensionContext) {
 
-    const disposable = vscode.commands.registerCommand('extension.jtt', async () => {
+    const disposable = vscode.commands.registerCommand('extension.dtt', async () => {
         const rawJSON = await vscode.env.clipboard.readText()
         const enableExport = getConfig<boolean>('export'),
             enableType = getConfig<boolean>('type'),
-            needSemicolons = getConfig<boolean>('semicolon'),
+            needSemicolons = getConfig<boolean>('semicolons'),
             rootName = getConfig<string>('rootName')
 
         try {

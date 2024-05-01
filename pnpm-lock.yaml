@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@jl-org/data-to-ts':
-    specifier: ^0.0.2
-    version: 0.0.2
+    specifier: ^0.0.5
+    version: 0.0.5
 
 devDependencies:
   '@types/mocha':
@@ -188,8 +188,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /@jl-org/data-to-ts@0.0.2:
-    resolution: {integrity: sha512-K1uq7kzlf2xV9mOFEi2tnnYPB4P1fvUy8eQyoMXnaSg06tfMpXqIFnYH6pjGs0UxcErs4yajJGQ70xiYnUQSSQ==}
+  /@jl-org/data-to-ts@0.0.5:
+    resolution: {integrity: sha512-7+hxXcoI1gO4R3jf+vhXRAvDdLlgDaCxsyCzJGcbA7a23FE+uUpDHwmqbkis/aFnfposQiiZU/88awAsJzfPEg==}
     dependencies:
       json-to-ts: 2.1.0
     dev: false
@@ -1171,7 +1171,7 @@ packages:
       function.prototype.name: 1.1.6
       get-intrinsic: 1.2.4
       get-symbol-description: 1.0.2
-      globalthis: 1.0.3
+      globalthis: 1.0.4
       gopd: 1.0.1
       has-property-descriptors: 1.0.2
       has-proto: 1.0.3
@@ -1494,11 +1494,12 @@ packages:
       once: 1.4.0
     dev: true
 
-  /globalthis@1.0.3:
-    resolution: {integrity: sha512-sFdI5LyBiNTHjRd7cGPWapiHWMOXKyuBNX/cWJ3NfzrZQVa8GI/8cofCl74AOVqq9W5kNmguTIzJ/1s2gyI9wA==}
+  /globalthis@1.0.4:
+    resolution: {integrity: sha512-DpLKbNU4WylpxJykQujfCcwYWiV/Jhm50Goo0wrVILAv5jOr9d+H+UR3PhSCD2rCCEIg0uc+G+muBTwD54JhDQ==}
     engines: {node: '>= 0.4'}
     dependencies:
       define-properties: 1.2.1
+      gopd: 1.0.1
     dev: false
 
   /gopd@1.0.1:

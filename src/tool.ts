@@ -14,5 +14,5 @@ export function writeCode(code: string) {
 }
 
 export function getConfig<T>(key: string) {
-    return vscode.workspace.getConfiguration('jtt').get(key) as T
+    return vscode.workspace.getConfiguration('dtt').get(key) as T
 }
