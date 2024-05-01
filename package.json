@@ -1,0 +1,82 @@
+{
+    "name": "vsc-data-to-ts",
+    "displayName": "JSON To Typescript",
+    "description": "JSON To Typescript",
+    "version": "0.0.2",
+    "publisher": "CJL",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/beixiyo/vsc-data-to-ts"
+    },
+    "engines": {
+        "vscode": "^1.88.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [],
+    "main": "./dist/extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.jtt",
+                "title": "JSON To Typescript"
+            }
+        ],
+        "keybindings": {
+            "when": "editorTextFocus",
+            "command": "extension.jtt",
+            "key": "ctrl+shift+alt+v"
+        },
+        "configuration": {
+            "title": "JSON To Typescript",
+            "properties": {
+                "jtt.export": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "加上 export 关键字"
+                },
+                "jtt.type": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "使用 type 关键字"
+                },
+                "jtt.semicolons": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "添加分号"
+                },
+                "jtt.rootName": {
+                    "type": "string",
+                    "default": "RootObject",
+                    "description": "根节点名字"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "build": "vsce package --no-dependencies",
+        "vscode:prepublish": "pnpm run package",
+        "compile": "webpack",
+        "watch": "webpack --watch",
+        "package": "webpack --mode production --devtool hidden-source-map",
+        "compile-tests": "tsc -p . --outDir out",
+        "watch-tests": "tsc -p . -w --outDir out",
+        "test": "vscode-test"
+    },
+    "devDependencies": {
+        "@types/mocha": "^10.0.6",
+        "@types/node": "18.x",
+        "@types/vscode": "^1.88.0",
+        "@vscode/test-cli": "^0.0.8",
+        "@vscode/test-electron": "^2.3.9",
+        "@vscode/vsce": "^2.26.0",
+        "ts-loader": "^9.5.1",
+        "typescript": "^5.3.3",
+        "webpack": "^5.91.0",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "@jl-org/data-to-ts": "^0.0.2"
+    }
+}
