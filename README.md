@@ -6,6 +6,8 @@
 
 复制你的 `JSON | JS`，按下 `Ctrl + Alt + Shift + v`  
 
+# 优势
+
 **支持**
 - 常规 *JSON*
 - *JavaScript* 对象
