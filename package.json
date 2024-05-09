@@ -2,7 +2,7 @@
     "name": "vsc-data-to-ts",
     "displayName": "Data To Typescript",
     "description": "Data To Typescript",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "CJL",
     "repository": {
         "type": "git",

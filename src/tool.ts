@@ -1,6 +1,5 @@
 import * as vscode from 'vscode'
 
-
 export function writeCode(code: string) {
     const editor = vscode.window.activeTextEditor
     if (!editor) {
